@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.description p{
+    @apply mb-6 md:mb-5 lg:mb-4 text-base  text-footer-1;
+}
+.description{
+    @apply pt-6;
+}
+
+.top-red{
+    @apply 
+    before:content-[''] 
+    before:block 
+    before:w-20 
+    before:h-1
+  before:bg-red 
+    before:absolute
+    before:-top-7;
+}
+h1, h2, h3, h4, h5, h6{
+    @apply font-outfit
+}
